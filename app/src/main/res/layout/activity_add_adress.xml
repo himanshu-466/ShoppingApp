@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Activity.AddAdressActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/addressicon" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:nestedScrollingEnabled="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/addresscity"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:hint="City*"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/dangered" />
+
+            <EditText
+                android:id="@+id/addresslocality"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:isScrollContainer="true"
+                android:gravity="start"
+                android:hint="Locality, area or street*"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:padding="15dp"
+                android:textColor="@color/dangered" />
+
+            <EditText
+                android:id="@+id/addressflat_building"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:gravity="start" 
+                android:isScrollContainer="true"
+                android:hint="Flat no.,building name*"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:padding="15dp"
+                android:textColor="@color/dangered" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/addresspincode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greyborder_backgroud"
+                    android:hint="Pincode*"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:textColor="@color/dangered" />
+
+                <EditText
+                    android:id="@+id/addressstare"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/greyborder_backgroud"
+                    android:hint="State*"
+                    android:inputType="text"
+                    android:padding="15dp"
+                    android:textColor="@color/dangered" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/addresslandmark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:hint="Landmark(optional)"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/dangered" />
+
+            <EditText
+                android:id="@+id/addressname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:hint="Name*"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:textColor="@color/dangered"
+                android:textColorHint="#9F9B9D" />
+
+            <EditText
+                android:id="@+id/addressmobileno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:hint="Mobile No.*"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/dangered" />
+
+            <EditText
+                android:id="@+id/addressalternatemob"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/greyborder_backgroud"
+                android:ems="10"
+                android:hint="Alternate Mobile No.(Optional)"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/dangered" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:background="@color/dangered"
+                android:text="Save"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/addressprogressbar"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
